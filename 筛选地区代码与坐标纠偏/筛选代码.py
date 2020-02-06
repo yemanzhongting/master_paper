@@ -4,8 +4,7 @@ __time__ = '2020/1/31 19:52'
 import json,time
 import pandas as pd
 from urllib.request import urlopen, quote
-import re
-from 坐标纠偏 import bd09togcj02,gcj02towgs84
+from 获取医院坐标.坐标纠偏 import bd09togcj02,gcj02towgs84
 def getlnglat(address):
     #http://api.map.baidu.com/geocoder/v2/?address=北京市海淀区上地十街10号&output=json&ak=您的ak&callback=showLocation //GET请求
     url = 'http://api.map.baidu.com/geocoder/v2/'
